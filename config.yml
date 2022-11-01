@@ -1,0 +1,14 @@
+app:
+  port: "8088"
+  mail:
+    host: ""
+    port: ""
+    sendName: ""
+    userName: ""
+    authCode: ""
+  mysql:
+    name: ""
+    username: ""
+    password: ""
+    address: ""
+    port: ""
