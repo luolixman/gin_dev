@@ -1,0 +1,8 @@
+app:
+  bot:
+    url: 127.0.0.1
+    post: 5700
+  server:
+    post: 8848
+  master: 123456789
+  
