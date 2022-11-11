@@ -1,7 +1,7 @@
 app:
   bot:
     url: 127.0.0.1
-    post: 5700
+    port: 5700
   server:
     port: 8848
   master: 123456789
