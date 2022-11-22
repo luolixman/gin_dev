@@ -14,7 +14,7 @@ RUN mkdir config && cd config
 
 RUN wget http://dev.923333.xyz/config/config.yml
 
-COPY config.yml /opt/gin_first/config
+COPY /opt/gin_first/config.yml /opt/gin_first/config
 
 RUN chmod 777 /opt/gin_first/main
 
