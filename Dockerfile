@@ -10,7 +10,7 @@ RUN cd /opt/gin_first/
 
 RUN pwd
 
-RUN wget http://dev.923333.xyz/test/main
+RUN wget http://dev.923333.xyz/raw/main
 
 RUN mkdir config && cd config
 
@@ -18,7 +18,7 @@ RUN pwd
 
 RUN ls
 
-RUN wget http://dev.923333.xyz/test/config.yml
+RUN wget http://dev.923333.xyz/raw/config.yml
 
 COPY config.yml config
 
