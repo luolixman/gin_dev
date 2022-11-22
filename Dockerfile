@@ -2,6 +2,8 @@ FROM alpine:edge
 
 LABEL MAINTAINER="weilev"
 
+RUN mkdir /opt/gin_first/
+
 WORKDIR /opt/gin_first/
 
 RUN ls
@@ -11,6 +13,8 @@ RUN cd /opt/gin_first/
 RUN wget http://dev.923333.xyz/config/main
 
 RUN mkdir config && cd config
+
+RUN ls
 
 RUN wget http://dev.923333.xyz/config/config.yml
 
