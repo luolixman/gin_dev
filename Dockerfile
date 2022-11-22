@@ -2,8 +2,6 @@ FROM alpine:edge
 
 LABEL MAINTAINER="weilev"
 
-RUN mkdir /opt/gin_first/
-
 WORKDIR /opt/gin_first/
 
 RUN ls
