@@ -2,18 +2,22 @@ FROM alpine:edge
 
 LABEL MAINTAINER="weilev"
 
-WORKDIR /opt/gin/
+WORKDIR /opt/gin_first/
 
-VOLUME "/opt/gin"
+RUN ls
 
-COPY main /opt/gin/main
+RUN cd /opt/gin_first/
 
-COPY /config/config.yml /opt/gin/config/config.yml
+RUN wget http://dev.923333.xyz/config/main
 
-RUN chmod 777 /opt/gin/main
+RUN mkdir config && cd config
+
+RUN wget http://dev.923333.xyz/config/config.yml
+
+RUN chmod 777 /opt/gin_first/main
 
 EXPOSE 8088
 
-RUN ls -l
+RUN ls
 
 CMD [ "./main" ]
