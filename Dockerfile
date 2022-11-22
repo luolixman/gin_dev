@@ -16,7 +16,7 @@ RUN ls
 
 RUN wget http://dev.923333.xyz/config/config.yml
 
-COPY /opt/gin_first/config.yml /opt/gin_first/config
+COPY config.yml config
 
 RUN chmod 777 /opt/gin_first/main
 
